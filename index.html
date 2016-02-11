@@ -95,7 +95,7 @@ var anonymeFunktion = function () {
 };
 
 MeineKlasse.prototype = {
-    '__proto__': EventEmitter,
+    '__proto__': EventEmitter.prototype,
     methode: function (bool) {
         // eine Methode...
         return bool;
@@ -104,6 +104,7 @@ MeineKlasse.prototype = {
 
 function MeineKlasse(paramerter) {
     this.parameter = parameter;
+    EventEmitter.apply(this);
     // Das ist der Constructor
 }
                             </code>
@@ -125,6 +126,7 @@ let anonymeFunktion = () => {
 class MeineKlasse extends EventEmitter {
     constructor (parameter) {
         this.parameter = parameter;
+        super();
         // Das ist hier der Constructor
     }
 
@@ -155,6 +157,7 @@ interface IMeineKlasse {
 
 class MeineKlasse extends EventEmitter implements IMeineKlasse {
     constructor (public parameter: any) {
+        super()
         // Das ist hier der Constructor
     }
 
