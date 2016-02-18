@@ -440,6 +440,43 @@ declare var mapbender: IMapbender;
 
                 <section>
                     <section>
+                        <h2>TSLint</h2>
+                    </section>
+                    <section>
+                        <h3>Konfigurationsmöglichkeiten</h3>
+                        <ul>
+                            <li><b>Ja / Nein:</b> <pre><code>"no-eval": true, "no-any": true</code></pre></li>
+                            <li><b>Wie:</b> <pre><code>"quotemark": [true, "single", "avoid-escape"]</code></pre></li>
+                            <li><b>Reihenfolge:</b> <pre><code>"member-ordering": [true,
+  "public-before-private",
+  "static-before-instance",
+  "variables-before-functions"]</code></pre></li>
+                            <li><b>Formatierung:</b> <pre><code>"comment-format": [true, "check-space"]</code></pre></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Globale Einstellungen</h3>
+                        <ul>
+                            <li>tslint.json</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>"Lokale" Einstellungen</h3>
+                        <ul>
+                            <li>/* tslint:disable */</li>
+                            <li>/* tslint:enable */</li>
+                            <li>/* tslint:disable:no-any no-vars */</li>
+                            <li>/* tslint:enable:no-any no-vars */</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Erweiterbarkeit</h3>
+                        <p>Man kann (leicht) eigene Regeln hinzufügen</p>
+                    </section>
+
+                </section>
+                <section>
+                    <section>
                         <h2>Weiterführender Einstieg in TypeScript</h2>
                     </section>
                     <section>
@@ -457,6 +494,13 @@ declare var mapbender: IMapbender;
                         <ul>
                             <li><a href="https://github.com/frankwallis/plugin-typescript">mit SystemJS</a></li>
                             <li><a href="https://github.com/iammerrick/require-ts">mit RequireJS</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h6>TSLint</h6>
+                        <ul>
+                            <li><a href="https://github.com/palantir/tslint">Github</a></li>
+                            <li><a href="https://github.com/palantir/tslint#supported-rules">Regeln</a></li>
                         </ul>
                     </section>
                 </section>
